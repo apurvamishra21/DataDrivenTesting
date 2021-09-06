@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+  <test thread-count="5" name="Test">
+  
+ 
+  
+  <groups>
+  	 <run>
+  	 	<include name="smoke"></include>
+  	 	<exclude name="smoke"></exclude>
+  	 	
+  	 </run>
+  	 
+  	 </groups>
+  
+    <classes>
+      <class name="com.vtiger.testscripts.CreateNewProduct"/>
+      <class name="com.vtiger.testscripts.CreateNewLead"/>
+      <class name="com.vtiger.testscripts.CreateNewContact">
+      
+      <methods>
+      <include name="newContactCreation1"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
